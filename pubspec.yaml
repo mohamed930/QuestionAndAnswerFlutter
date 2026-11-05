@@ -57,6 +57,20 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+  fonts:
+    - family: Quicksand
+      fonts:
+        - asset: lib/Assests/font/Quicksand-Light.ttf
+          weight: 300
+        - asset: lib/Assests/font/Quicksand-Regular.ttf
+          weight: 400
+        - asset: lib/Assests/font/Quicksand-Medium.ttf
+          weight: 500
+        - asset: lib/Assests/font/Quicksand-SemiBold.ttf
+          weight: 600
+        - asset: lib/Assests/font/Quicksand-Bold.ttf
+          weight: 700
+
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

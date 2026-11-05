@@ -1,0 +1,40 @@
+import 'package:flutter/material.dart';
+import 'package:question_and_answer/Compoents/AnswerComponets.dart';
+import 'package:question_and_answer/Compoents/AppBarComponets.dart';
+import 'package:question_and_answer/Compoents/QuestionComponents.dart';
+
+class Questionsscreen extends StatefulWidget {
+  const Questionsscreen({super.key});
+
+  @override
+  State<Questionsscreen> createState() => _QuestionsscreenState();
+}
+
+class _QuestionsscreenState extends State<Questionsscreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBarcomponets(title: "Questions and aswers",
+                                backGroundColor: Theme.of(context).colorScheme.primary,
+                                fontColor: Colors.white,
+                                isCenter: false),
+      body: Container(
+          padding: EdgeInsets.all(16),
+          child: Column(
+            spacing: 12,
+            children: [
+              Questioncomponents(title: "Which isn't correct about array?"),
+
+              AnswerComponet(answers: [
+                "An array can store multiple values in a single variable.",
+                "Array elements are accessed using an index.",
+                "The first element of an array has an index of 1.",
+                "An array can contain duplicate values."
+              ])
+            ],
+          )
+      ),
+    );
+  }
+}
+
