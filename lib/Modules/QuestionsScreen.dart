@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:question_and_answer/Compoents/AnswerComponets.dart';
+import 'package:question_and_answer/Compoents/Answers/AnswerComponets.dart';
 import 'package:question_and_answer/Compoents/AppBarComponets.dart';
 import 'package:question_and_answer/Compoents/MainButtonComponets.dart';
 import 'package:question_and_answer/Compoents/QuestionComponents.dart';
@@ -14,7 +14,7 @@ class Questionsscreen extends StatefulWidget {
 
 class _QuestionsscreenState extends State<Questionsscreen> {
   String? selectedAnswer;
-  bool? isCorrect = false;
+  bool? isCorrect;
 
   @override
   Widget build(BuildContext context) {
@@ -40,9 +40,21 @@ class _QuestionsscreenState extends State<Questionsscreen> {
                 "The first element of an array has an index of 1.",
                 "An array can contain duplicate values.",
               ],
+              onAnswerSelected: (answer) {
+                setState(() {
+                  selectedAnswer = answer;
+                });
+              },
             ),
 
-            Mainbuttoncomponets(answer: selectedAnswer),
+            Mainbuttoncomponets(
+              answer: selectedAnswer,
+              onChecked: (correct) {
+                setState(() {
+                  isCorrect = correct;
+                });
+              },
+            ),
 
             if (isCorrect == false)
               Row(
@@ -68,7 +80,6 @@ class _QuestionsscreenState extends State<Questionsscreen> {
                   ),
                 ],
               ),
-
           ],
         ),
       ),
