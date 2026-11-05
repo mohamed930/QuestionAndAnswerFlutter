@@ -53,13 +53,17 @@ Calling `setState()` tells Flutter to rebuild the affected UI using the updated 
 
 The first screenshot shows the quiz screen with an option selected and the **Confirm Answer** button. The correct-answer feedback is visible below the button.
 
-![Selected answer and feedback](https://l.top4top.io/p_39615dlls1.png)
+<p align="center">
+  <img src="https://l.top4top.io/p_39615dlls1.png" alt="Selected answer and feedback" width="360" />
+</p>
 
 ### Evidence 2 — Answer selected, confirmation state
 
 The second screenshot shows the selected answer and the confirmation button in its success state. This demonstrates the screen's visual response after confirming the answer.
 
-![Confirmed answer state](https://drive.google.com/file/d/14MUA7o8DzUAWvx79weDXek0wiqFoYPQq/view?usp=sharing)
+<p align="center">
+  <img src="https://j.top4top.io/p_396110kue1.png" alt="Confirmed answer state" width="360" />
+</p>
 
 > Replace the image paths above with the actual screenshot locations in your repository. For example, keep the screenshots in `docs/images/` and commit them with the README.
 
