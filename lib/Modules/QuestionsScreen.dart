@@ -19,9 +19,10 @@ class _QuestionsscreenState extends State<Questionsscreen> {
                                 fontColor: Colors.white,
                                 isCenter: false),
       body: Container(
+          width: .infinity,
           padding: EdgeInsets.all(16),
           child: Column(
-            spacing: 12,
+            spacing: 16,
             children: [
               Questioncomponents(title: "Which isn't correct about array?"),
 

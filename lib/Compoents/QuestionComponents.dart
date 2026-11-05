@@ -8,8 +8,11 @@ class Questioncomponents extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(title,
-        style: Font.semiBold.style.copyWith(fontSize: 19)
+    return Container(
+      width: .infinity,
+      child: Text(title,
+        style: Font.semiBold.style.copyWith(fontSize: 19),
+      ),
     );
   }
 }
