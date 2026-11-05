@@ -53,7 +53,7 @@ Calling `setState()` tells Flutter to rebuild the affected UI using the updated 
 
 The first screenshot shows the quiz screen with an option selected and the **Confirm Answer** button. The correct-answer feedback is visible below the button.
 
-![Selected answer and feedback](https://drive.google.com/file/d/1aoeKgMbuB3C353W_vCL6v-LB07iIDjJh/view?usp=sharing)
+![Selected answer and feedback](https://l.top4top.io/p_39615dlls1.png)
 
 ### Evidence 2 — Answer selected, confirmation state
 
